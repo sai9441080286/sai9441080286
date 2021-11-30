@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() 
+{
+    int a=3;
+    float b=77.1;               
+ printf("a after incremented %d,++a");
+ printf ("b after incremented%d,--b");
+    
+    return 0;
+}
