@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main() {
+ char name[15];
+ FILE *fp;
+ fp=fopen("data2.txt","a");
+ printf("Enter ur name:");
+ scanf("%s",name);
+ fprintf(fp,"%s",name);
+ fclose(fp);
+ fp=fopen("data2.txt","r");
+ if(fscanf(fp,"%s",name))
+ printf("%s",name);
+ fclose(fp);
+ }
+
