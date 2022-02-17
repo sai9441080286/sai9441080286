@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main() {
+ int i;
+ char name[15];
+ FILE *fp;
+ fp=fopen("data1.txt","r");
+  fscanf(fp,"%d%s",&i,name);
+ printf("The integer in data1.txt is %d\n",i);
+ printf("The String in data1.txt is %s",name);
+ fclose(fp);
+  }
